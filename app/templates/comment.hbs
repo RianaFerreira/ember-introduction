@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<p>{{body}}</p>
+
+<p>
+  <strong>Authors: </strong>
+  {{#each authors as |author|}}
+    {{author}},
+  {{/each}}
+</p>
+
+<h4>Votes</h4>
+<ul>
+  {{#each votes as |vote|}}
+    <li><strong>{{vote.voter}}</strong> - {{vote.choice}}</li>
+  {{/each}}
+</ul>
