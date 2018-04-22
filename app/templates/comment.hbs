@@ -1,5 +1,9 @@
-<h1>{{title}}</h1>
-<p>{{body}}</p>
+<h1 {{action 'toggleBody'}}>{{title}}</h1>
+<button {{action 'sayHello' on='mouseEnter'}}>Say Hello</button>
+
+{{#if isShowingBody}}
+  <p>{{body}}</p>
+{{/if}}
 
 <p>
   <strong>Authors: </strong>
